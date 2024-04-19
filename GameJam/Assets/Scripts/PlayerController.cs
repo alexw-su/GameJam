@@ -9,7 +9,7 @@ public class PlayerController : MonoBehaviour
     public float stopDistance = 0.3f;
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (MenuManager.instance.IsGameStarted() && Input.GetMouseButtonDown(0))
         {
             // Create a ray from the camera to the point clicked by the mouse
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
