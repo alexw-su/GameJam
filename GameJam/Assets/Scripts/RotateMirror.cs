@@ -32,19 +32,17 @@ public class RotateMirror : MonoBehaviour
         rotations.Add(rotation1);
         rotations.Add(rotation2);
 
-        Debug.Log(transform.rotation.eulerAngles);
-        Debug.Log(rotation1);
-        Debug.Log(rotation2);
+
     }
 
     public void Rotate()
     {
-        if(!rotating) StartCoroutine(TurnMirror());
+        if (!rotating) StartCoroutine(TurnMirror());
     }
 
 
     IEnumerator TurnMirror()
-    {   
+    {
         Debug.Log("Turning Mirror");
         rotating = true;
         float timeElapsed = 0;
@@ -52,10 +50,10 @@ public class RotateMirror : MonoBehaviour
 
         var nextStateRotation = Quaternion.Euler(rotations[state]);
 
-        while(timeElapsed <= rotationTime)
+        while (timeElapsed <= rotationTime)
         {
             timeElapsed += Time.deltaTime;
-            transform.rotation = Quaternion.Slerp(transform.rotation, nextStateRotation , timeElapsed / rotationTime);
+            transform.rotation = Quaternion.Slerp(transform.rotation, nextStateRotation, timeElapsed / rotationTime);
 
             yield return null;
         }
@@ -67,6 +65,6 @@ public class RotateMirror : MonoBehaviour
     public void IncrementState()
     {
         state++;
-        if(state >= 3) state = 0;
+        if (state >= 3) state = 0;
     }
 }

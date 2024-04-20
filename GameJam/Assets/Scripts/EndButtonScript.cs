@@ -2,16 +2,19 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEditor.SearchService;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class EndButtonScript : MonoBehaviour
 {
-
+    public UnityEvent interactEvent;
     //on trigger
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Moth"))
         {
-            LevelManager.instance.LevelCompleted();
+            interactEvent?.Invoke();
+
+            //LevelManager.instance.LevelCompleted();
         }
     }
 }
