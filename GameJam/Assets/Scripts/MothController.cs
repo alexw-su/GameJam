@@ -12,12 +12,6 @@ public class MothController : MonoBehaviour
     [SerializeField] Transform _target;
     [SerializeField] float _radius;
 
-    [Header("Test Variables")]
-    [SerializeField] Transform _target1;
-    [SerializeField] Transform _target2;
-    [SerializeField] Transform _target3;
-    [SerializeField] Transform _target4;
-
     NavMeshAgent _agent;
     List<Vector3> mothTargets = new List<Vector3>();
     List<Vector3> allLastTargets = new List<Vector3>();
@@ -25,6 +19,9 @@ public class MothController : MonoBehaviour
     //singleton
     public static MothController instance;
     public GameObject testObject;
+    [SerializeField] GameObject lightTemplate;
+    List<GameObject> lights = new List<GameObject>();
+
     private void Awake()
     {
         if (instance == null) instance = this;
@@ -59,7 +56,23 @@ public class MothController : MonoBehaviour
                 ? destinations.GetRange(1, destinations.Count - 1)
                 : destinations;
             nextTargetIndex = GetNearestTargetIndex();
+            UpdateLights();
             StartMoving();
+        }
+    }
+    void UpdateLights()
+    {
+        //destroy all items from lights before creating again
+        foreach (var item in lights)
+        {
+            Destroy(item);
+        }
+        lights.Clear();
+        foreach (var item in allLastTargets)
+        {
+            //GameObject newItem = Instantiate(lightTemplate, item);
+            GameObject newItem = Instantiate(lightTemplate, item, Quaternion.identity);
+            lights.Add(newItem);
         }
     }
     private bool ListsAreEqual(List<Vector3> list1, List<Vector3> list2)
