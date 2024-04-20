@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class LightSource
@@ -8,6 +9,9 @@ public class LightSource
     GameObject lightObj;
     LineRenderer light;
     List<Vector3> lightIndices = new List<Vector3>();
+    public float startWidth = 0.3f;
+    public float endWidth = 0.2f;
+
     public LightSource(Vector3 pos, Vector3 direction, Material material)
     {
         this.light = new LineRenderer();
@@ -17,8 +21,8 @@ public class LightSource
         this.direction = direction;
 
         this.light = this.lightObj.AddComponent(typeof(LineRenderer)) as LineRenderer;
-        this.light.startWidth = 0.1f;
-        this.light.endWidth = 0.1f;
+        this.light.startWidth = startWidth;
+        this.light.endWidth = endWidth;
         this.light.material = material;
         this.light.startColor = Color.yellow;
         this.light.endColor = Color.yellow;
