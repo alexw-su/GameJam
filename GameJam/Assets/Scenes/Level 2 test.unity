@@ -555,7 +555,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9142189393072993286, guid: 08eeab22ceab91447b8a5ce3670d2865, type: 3}
       propertyPath: range
-      value: 8
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9142189393072993286, guid: 08eeab22ceab91447b8a5ce3670d2865, type: 3}
       propertyPath: state
@@ -563,11 +563,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9142189393072993286, guid: 08eeab22ceab91447b8a5ce3670d2865, type: 3}
       propertyPath: rotationTime
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9142189393072993286, guid: 08eeab22ceab91447b8a5ce3670d2865, type: 3}
       propertyPath: degreesOfRotation
-      value: 45
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

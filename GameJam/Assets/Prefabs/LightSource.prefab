@@ -12,10 +12,11 @@ GameObject:
   - component: {fileID: 5103013138171049905}
   - component: {fileID: 1503663967794615916}
   - component: {fileID: 4590172392065684096}
+  - component: {fileID: 3124594821590339114}
   - component: {fileID: 7091042319981579260}
   m_Layer: 0
   m_Name: LightSource
-  m_TagString: Untagged
+  m_TagString: Mirror
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -31,7 +32,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -2.5339878, y: 1.87, z: -1}
   m_LocalScale: {x: 1.1619632, y: 0.40848, z: 0.30307376}
-  m_ConstrainProportionsScale: 0
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -106,6 +107,22 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &3124594821590339114
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7680246920218051967}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24cbbea53363e704f82cddd6fcdb7378, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  degreesOfRotation: 45
+  rotationTime: 3
+  range: 8
+  state: 0
 --- !u!114 &7091042319981579260
 MonoBehaviour:
   m_ObjectHideFlags: 0
