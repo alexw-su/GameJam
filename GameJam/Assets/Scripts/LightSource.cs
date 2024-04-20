@@ -49,13 +49,16 @@ public class LightSource
     }
     void UpdateLight()
     {
+        //Debug.Log("Update light");
         int count = 0;
         light.positionCount = lightIndices.Count;
+        //Debug.Log("count:" + lightIndices.Count);
         foreach (Vector3 index in lightIndices)
         {
             light.SetPosition(count, index);
             count++;
         }
+        MothController.instance.SetNewTargets(lightIndices);
     }
     void CheckHit(RaycastHit hitInfo, Vector3 direction, LineRenderer light)
     {
