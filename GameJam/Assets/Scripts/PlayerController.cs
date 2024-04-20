@@ -48,6 +48,11 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
+        if(input.Main.Look.IsPressed()) LookAtMouse();
+    }
+
+    void LookAtMouse()
+    {
         var ray = Camera.main.ScreenPointToRay(Input.mousePosition);
         var distance = (transform.position - Camera.main.transform.position).magnitude;
 
