@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using TMPro;
+using UnityEditor.Rendering;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -23,6 +24,7 @@ public class MothController : MonoBehaviour
     int nextTargetIndex = 0;
     //singleton
     public static MothController instance;
+    public GameObject testObject;
     private void Awake()
     {
         if (instance == null) instance = this;
@@ -69,6 +71,11 @@ public class MothController : MonoBehaviour
     {
         if (mothTargets.Count == 0) return;
         _agent.destination = mothTargets[nextTargetIndex];
+        if (testObject != null)
+        {
+            testObject.transform.position = mothTargets[nextTargetIndex];
+        }
+        //Debug.Log("New Destination" + mothTargets[nextTargetIndex]);
         //mothTargets.RemoveAt(nextTargetIndex);
         if (nextTargetIndex + 1 < mothTargets.Count)
         {
