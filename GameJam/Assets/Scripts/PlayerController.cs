@@ -21,7 +21,7 @@ public class PlayerController : MonoBehaviour
         input = new PlayerActions();
         AssignInputs();
     }
-    
+
     void AssignInputs()
     {
         input.Main.Move.performed += ctx => ClickToMove();
