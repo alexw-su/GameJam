@@ -12,7 +12,7 @@ public class PlayerController : MonoBehaviour
     PlayerActions input;
     NavMeshAgent agent;
     [Header("Movement")]
-    [SerializeField] LayerMask clickableLayers;
+    [SerializeField] List<LayerMask> layers;
     public float lookRotationSpeed = 10f;
 
     private void Awake()
@@ -30,9 +30,23 @@ public class PlayerController : MonoBehaviour
     void ClickToMove()
     {
         RaycastHit hit;
-        if (Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out hit, 100, clickableLayers))
+        if (Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out hit, 100))
         {
-            agent.destination = hit.point;
+
+            if(hit.transform.gameObject.tag == "Mirror")
+            {
+                if(hit.transform.gameObject.TryGetComponent(out RotateMirror mirror)) Debug.LogWarning("Found Script");
+                
+                var distanceToMirror = (transform.position - hit.transform.position).magnitude;
+
+                Debug.Log(distanceToMirror);
+
+                if (distanceToMirror <= mirror.range) mirror.Rotate();
+            }
+            else if(hit.transform.gameObject.tag == "Clickable")
+            {
+                agent.destination = hit.point;
+            }
         }
     }
 

@@ -234,6 +234,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MIrror
       objectReference: {fileID: 0}
+    - target: {fileID: 3145121231830045171, guid: 08eeab22ceab91447b8a5ce3670d2865, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5692516178626609272, guid: 08eeab22ceab91447b8a5ce3670d2865, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.09887208
@@ -545,13 +549,21 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 39191569572173558, guid: 08eeab22ceab91447b8a5ce3670d2865, type: 3}
+      propertyPath: m_Size.x
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3145121231830045171, guid: 08eeab22ceab91447b8a5ce3670d2865, type: 3}
       propertyPath: m_Name
       value: MIrror
       objectReference: {fileID: 0}
+    - target: {fileID: 3145121231830045171, guid: 08eeab22ceab91447b8a5ce3670d2865, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5692516178626609272, guid: 08eeab22ceab91447b8a5ce3670d2865, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.55
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 5692516178626609272, guid: 08eeab22ceab91447b8a5ce3670d2865, type: 3}
       propertyPath: m_LocalPosition.y
@@ -559,7 +571,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5692516178626609272, guid: 08eeab22ceab91447b8a5ce3670d2865, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -7.4
+      value: -7.42
       objectReference: {fileID: 0}
     - target: {fileID: 5692516178626609272, guid: 08eeab22ceab91447b8a5ce3670d2865, type: 3}
       propertyPath: m_LocalRotation.w
@@ -588,6 +600,26 @@ PrefabInstance:
     - target: {fileID: 5692516178626609272, guid: 08eeab22ceab91447b8a5ce3670d2865, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9142189393072993286, guid: 08eeab22ceab91447b8a5ce3670d2865, type: 3}
+      propertyPath: range
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 9142189393072993286, guid: 08eeab22ceab91447b8a5ce3670d2865, type: 3}
+      propertyPath: state
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9142189393072993286, guid: 08eeab22ceab91447b8a5ce3670d2865, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9142189393072993286, guid: 08eeab22ceab91447b8a5ce3670d2865, type: 3}
+      propertyPath: rotationTime
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 9142189393072993286, guid: 08eeab22ceab91447b8a5ce3670d2865, type: 3}
+      propertyPath: degreesOfRotation
+      value: 20
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -813,13 +845,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -0.622
       objectReference: {fileID: 0}
+    - target: {fileID: 8439676627914741812, guid: 258c967eb386f3143a0c464937cf7679, type: 3}
+      propertyPath: m_NavMeshData
+      value: 
+      objectReference: {fileID: 23800000, guid: 8cfaabd712d6abe4f855c6f64c712635, type: 2}
     - target: {fileID: 8895713646051154961, guid: 258c967eb386f3143a0c464937cf7679, type: 3}
       propertyPath: m_Name
       value: PlaneWithNavMesh
       objectReference: {fileID: 0}
     - target: {fileID: 8895713646051154961, guid: 258c967eb386f3143a0c464937cf7679, type: 3}
       propertyPath: m_Layer
-      value: 6
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8895713646051154961, guid: 258c967eb386f3143a0c464937cf7679, type: 3}
+      propertyPath: m_TagString
+      value: Clickable
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -988,9 +1028,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 39191569572173558, guid: 08eeab22ceab91447b8a5ce3670d2865, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3145121231830045171, guid: 08eeab22ceab91447b8a5ce3670d2865, type: 3}
       propertyPath: m_Name
       value: MIrror (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3145121231830045171, guid: 08eeab22ceab91447b8a5ce3670d2865, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5692516178626609272, guid: 08eeab22ceab91447b8a5ce3670d2865, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1031,6 +1079,18 @@ PrefabInstance:
     - target: {fileID: 5692516178626609272, guid: 08eeab22ceab91447b8a5ce3670d2865, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9142189393072993286, guid: 08eeab22ceab91447b8a5ce3670d2865, type: 3}
+      propertyPath: range
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 9142189393072993286, guid: 08eeab22ceab91447b8a5ce3670d2865, type: 3}
+      propertyPath: rotationTime
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 9142189393072993286, guid: 08eeab22ceab91447b8a5ce3670d2865, type: 3}
+      propertyPath: degreesOfRotation
+      value: 20
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1299,6 +1359,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1503663967794615916, guid: e29d4848df6f92a47a26dfe0c502a4f8, type: 3}
+      propertyPath: m_RenderingLayerMask
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 2321487300908551696, guid: e29d4848df6f92a47a26dfe0c502a4f8, type: 3}
       propertyPath: m_LocalPosition.x
       value: -10.781319
@@ -1585,9 +1649,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf9f6594f1fbfa04d89e52e9100b3648, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clickableLayers:
-    serializedVersion: 2
+  layers:
+  - serializedVersion: 2
     m_Bits: 64
+  - serializedVersion: 2
+    m_Bits: 256
   lookRotationSpeed: 1
 --- !u!136 &2125009508
 CapsuleCollider:

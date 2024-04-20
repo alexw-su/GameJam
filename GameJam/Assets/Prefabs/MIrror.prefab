@@ -11,9 +11,10 @@ GameObject:
   - component: {fileID: 5692516178626609272}
   - component: {fileID: 7435291462763571310}
   - component: {fileID: 3909146855337289002}
-  - component: {fileID: 7724952109335398675}
-  m_Layer: 0
-  m_Name: MIrror
+  - component: {fileID: 9142189393072993286}
+  - component: {fileID: 39191569572173558}
+  m_Layer: 8
+  m_Name: Mirror
   m_TagString: Mirror
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -84,7 +85,23 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &7724952109335398675
+--- !u!114 &9142189393072993286
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3145121231830045171}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24cbbea53363e704f82cddd6fcdb7378, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  degreesOfRotation: 0
+  rotationTime: 0
+  playerNearby: 0
+  state: 0
+--- !u!65 &39191569572173558
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -103,5 +120,5 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 1, y: 1.0000001, z: 1.0000001}
   m_Center: {x: 0, y: 0, z: 0}
