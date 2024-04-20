@@ -8,6 +8,7 @@ public class LevelManager : MonoBehaviour
     int currentLevel = 1;
     [SerializeField] GameObject levelCompletedScreen;
     public static LevelManager instance;
+    public string savedLevelName;
     private void Awake()
     {
         if (instance == null) instance = this;
@@ -17,10 +18,21 @@ public class LevelManager : MonoBehaviour
     {
         levelCompletedScreen.SetActive(true);
     }
+    public void LevelCompleted(string lvlName)
+    {
+        savedLevelName = lvlName;
+        levelCompletedScreen.SetActive(true);
+    }
     public void LoadNextLevel()
     {
         currentLevel++;
         SceneManager.LoadScene("Level" + currentLevel);
+        levelCompletedScreen.SetActive(false);
+    }
+    public void LoadSavedLevel()
+    {
+        currentLevel++;
+        SceneManager.LoadScene(savedLevelName);
         levelCompletedScreen.SetActive(false);
     }
     public bool LevelCompletedScreenActive()

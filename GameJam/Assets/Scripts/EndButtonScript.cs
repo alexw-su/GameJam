@@ -10,6 +10,7 @@ public class EndButtonScript : MonoBehaviour
     //on trigger
     private void OnTriggerEnter(Collider other)
     {
+        Debug.Log("ON COLLISION");
         if (other.gameObject.CompareTag("Moth"))
         {
             interactEvent?.Invoke();
