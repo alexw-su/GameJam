@@ -13,8 +13,8 @@ GameObject:
   - component: {fileID: 3909146855337289002}
   - component: {fileID: 9142189393072993286}
   - component: {fileID: 39191569572173558}
-  m_Layer: 8
-  m_Name: Mirror
+  m_Layer: 0
+  m_Name: MIrror
   m_TagString: Mirror
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -99,7 +99,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   degreesOfRotation: 0
   rotationTime: 0
-  playerNearby: 0
+  range: 0
   state: 0
 --- !u!65 &39191569572173558
 BoxCollider:
