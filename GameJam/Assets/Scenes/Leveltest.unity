@@ -381,9 +381,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf9f6594f1fbfa04d89e52e9100b3648, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clickableLayers:
-    serializedVersion: 2
-    m_Bits: 64
+  layers: []
   lookRotationSpeed: 1
 --- !u!195 &96093326
 NavMeshAgent:
@@ -417,6 +415,7 @@ GameObject:
   m_Component:
   - component: {fileID: 101124913}
   - component: {fileID: 101124914}
+  - component: {fileID: 101124915}
   m_Layer: 7
   m_Name: MothwingCloak
   m_TagString: Untagged
@@ -480,7 +479,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 2d55ad781658abb4e92f81c3ca882e09, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2be60ddac16b09245a4d8bf7060640cb, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -491,6 +490,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &101124915
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 101124912}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 70e9ee7453718a04bb903c88e9d4a827, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &120931112
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5380,13 +5400,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 145008220}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 17.49, y: 1.38, z: 12.12}
+  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 16.368853, y: -1.7082504, z: 14.624719}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 345056037}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1284572227}
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!1 &254070245
 GameObject:
@@ -5429,6 +5449,7 @@ GameObject:
   m_Component:
   - component: {fileID: 275816793}
   - component: {fileID: 275816794}
+  - component: {fileID: 275816795}
   m_Layer: 7
   m_Name: MothwingCloak (1)
   m_TagString: Untagged
@@ -5492,7 +5513,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: e10601d03f5f4044dae77b8cc4860849, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2be60ddac16b09245a4d8bf7060640cb, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -5503,6 +5524,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &275816795
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 275816792}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 70e9ee7453718a04bb903c88e9d4a827, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &291679340
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5972,12 +6014,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 540408592}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -14.04, y: 2.17, z: 3.92}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -15.161147, y: -0.9182503, z: 6.424719}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1284572227}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &566130743
 GameObject:
@@ -6483,6 +6525,8 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2123119289}
+  - {fileID: 145008223}
+  - {fileID: 540408595}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1556379673 stripped
@@ -7405,12 +7449,12 @@ GameObject:
   - component: {fileID: 2123119288}
   - component: {fileID: 2123119290}
   m_Layer: 0
-  m_Name: Directional Light
+  m_Name: LetThereBeLight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!108 &2123119288
 Light:
   m_ObjectHideFlags: 0
@@ -7525,8 +7569,9 @@ GameObject:
   - component: {fileID: 7129807505931719266}
   - component: {fileID: 7129807505931719267}
   - component: {fileID: 7129807505931719268}
+  - component: {fileID: 7129807505931719269}
   m_Layer: 7
-  m_Name: Moth (1)
+  m_Name: Moth_Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7676,6 +7721,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MainCam: {fileID: 1858988001}
+--- !u!95 &7129807505931719269
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3081498224118574893}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: cb1b1d09526cd2f479d417ab4ab1afa1, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -7692,5 +7758,3 @@ SceneRoots:
   - {fileID: 484607971}
   - {fileID: 120931112}
   - {fileID: 1057567561}
-  - {fileID: 145008223}
-  - {fileID: 540408595}
