@@ -53,32 +53,20 @@ public class MothController : MonoBehaviour
         _agent.destination = newTarget.position;
         _target = newTarget;
     }
-    //public void ChangeTarget(Vector3 newTarget)
-    //{
-    //    _agent.destination = newTarget;
-    //    _target = newTarget;
-    //}
     public void SetNewTargets(List<Vector3> destinations)
     {
-        //if (allLastTargets.Count != destinations.Count)
-        //{
-        Debug.Log("inside if");
-        foreach (Vector3 des in destinations)
+        if (!allLastTargets.SequenceEqual(destinations))
         {
-            Debug.Log("Des" + des);
+            allLastTargets = destinations;
+            mothTargets = destinations.Count > 1
+                ? destinations.GetRange(1, destinations.Count - 1)
+                : destinations;
+            nextTargetIndex = GetNearestTargetIndex();
+            StartMoving();
         }
-        allLastTargets = destinations;
-        // get list except first element
-        mothTargets = destinations.Count > 1
-            ? destinations.GetRange(1, destinations.Count - 1)
-            : destinations;
-        nextTargetIndex = GetNearestTargetIndex();
-        StartMoving();
-        //}
     }
     public void StartMoving()
     {
-        Debug.Log("STARt Moving");
         if (mothTargets.Count == 0) return;
         _agent.destination = mothTargets[nextTargetIndex];
         //mothTargets.RemoveAt(nextTargetIndex);
@@ -97,20 +85,15 @@ public class MothController : MonoBehaviour
     {
         float minDistance = Mathf.Infinity;
         int nearestIndex = 0;
-        Debug.Log("-------------------------------------------------------");
         for (int i = 0; i < allLastTargets.Count - 1; i++)
         {
             float distance = Vector3.Distance(transform.position, allLastTargets[i]);
-            Debug.Log("Current distance" + distance);
             if (distance < minDistance)
             {
-                Debug.Log("in if");
                 minDistance = distance;
                 nearestIndex = i;
             }
         }
-        Debug.Log("Nearest distance" + minDistance);
-        Debug.Log("Nearest index" + nearestIndex);
         return nearestIndex;
     }
 
