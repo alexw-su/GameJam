@@ -419,7 +419,7 @@ NavMeshAgent:
   m_AutoRepath: 1
   m_Height: 1.0000001
   m_BaseOffset: 1
-  m_WalkableMask: 4294967295
+  m_WalkableMask: 5
   m_ObstacleAvoidanceType: 4
 --- !u!1001 &120931112
 PrefabInstance:
@@ -2071,6 +2071,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -0.622
       objectReference: {fileID: 0}
+    - target: {fileID: 8439676627914741812, guid: 258c967eb386f3143a0c464937cf7679, type: 3}
+      propertyPath: m_NavMeshData
+      value: 
+      objectReference: {fileID: 23800000, guid: 81ecb61ccc8dd404e97303dfda2b4b3a, type: 2}
     - target: {fileID: 8895713646051154961, guid: 258c967eb386f3143a0c464937cf7679, type: 3}
       propertyPath: m_Name
       value: PlaneWithNavMesh
@@ -2477,6 +2481,34 @@ PrefabInstance:
     - target: {fileID: 1765852295247550572, guid: 2b8b4dc8473437748b5ad86e0c6d9088, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5617623929854162875, guid: 2b8b4dc8473437748b5ad86e0c6d9088, type: 3}
+      propertyPath: interactEvent.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5617623929854162875, guid: 2b8b4dc8473437748b5ad86e0c6d9088, type: 3}
+      propertyPath: interactEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5617623929854162875, guid: 2b8b4dc8473437748b5ad86e0c6d9088, type: 3}
+      propertyPath: interactEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 93631833}
+    - target: {fileID: 5617623929854162875, guid: 2b8b4dc8473437748b5ad86e0c6d9088, type: 3}
+      propertyPath: interactEvent.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5617623929854162875, guid: 2b8b4dc8473437748b5ad86e0c6d9088, type: 3}
+      propertyPath: interactEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: LevelCompleted
+      objectReference: {fileID: 0}
+    - target: {fileID: 5617623929854162875, guid: 2b8b4dc8473437748b5ad86e0c6d9088, type: 3}
+      propertyPath: interactEvent.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: LevelManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5617623929854162875, guid: 2b8b4dc8473437748b5ad86e0c6d9088, type: 3}
+      propertyPath: interactEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 6810135775876154731, guid: 2b8b4dc8473437748b5ad86e0c6d9088, type: 3}
       propertyPath: m_Name
