@@ -20,6 +20,7 @@ public class PlayerController : MonoBehaviour
         agent = GetComponent<NavMeshAgent>();
         input = new PlayerActions();
         AssignInputs();
+        agent.updateRotation = false;
     }
 
     void AssignInputs()
