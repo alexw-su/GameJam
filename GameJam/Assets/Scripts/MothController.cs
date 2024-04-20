@@ -21,7 +21,7 @@ public class MothController : MonoBehaviour
     NavMeshAgent _agent;
     List<Vector3> mothTargets = new List<Vector3>();
     List<Vector3> allLastTargets = new List<Vector3>();
-    int nextTargetIndex = 0;
+    int nextTargetIndex = -1;
     //singleton
     public static MothController instance;
     public GameObject testObject;
@@ -50,14 +50,9 @@ public class MothController : MonoBehaviour
         }
     }
 
-    public void ChangeTarget(Transform newTarget)
-    {
-        _agent.destination = newTarget.position;
-        _target = newTarget;
-    }
     public void SetNewTargets(List<Vector3> destinations)
     {
-        if (!allLastTargets.SequenceEqual(destinations))
+        if (!ListsAreEqual(allLastTargets, destinations))
         {
             allLastTargets = destinations;
             mothTargets = destinations.Count > 1
@@ -66,6 +61,24 @@ public class MothController : MonoBehaviour
             nextTargetIndex = GetNearestTargetIndex();
             StartMoving();
         }
+    }
+    private bool ListsAreEqual(List<Vector3> list1, List<Vector3> list2)
+    {
+        if (list1.Count != list2.Count)
+            return false;
+
+        for (int i = 0; i < list1.Count; i++)
+        {
+            // Check if the elements are "equal enough" (within a small tolerance)
+            if (!Vector3ApproximatelyEqual(list1[i], list2[i]))
+                return false;
+        }
+
+        return true;
+    }
+    private bool Vector3ApproximatelyEqual(Vector3 v1, Vector3 v2)
+    {
+        return Vector3.Distance(v1, v2) < 0.001f; // Adjust tolerance as needed
     }
     public void StartMoving()
     {
