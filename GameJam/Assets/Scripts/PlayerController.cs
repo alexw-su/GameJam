@@ -21,10 +21,12 @@ public class PlayerController : MonoBehaviour
         input = new PlayerActions();
         AssignInputs();
     }
+    
     void AssignInputs()
     {
         input.Main.Move.performed += ctx => ClickToMove();
     }
+
     void ClickToMove()
     {
         RaycastHit hit;
@@ -33,13 +35,24 @@ public class PlayerController : MonoBehaviour
             agent.destination = hit.point;
         }
     }
+
     void OnEnable()
     {
         input.Enable();
     }
+
     void OnDisable()
     {
         input.Disable();
+    }
+
+    void Update()
+    {
+        var ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+        var distance = (transform.position - Camera.main.transform.position).magnitude;
+
+        transform.LookAt(ray.origin + ray.direction * distance);
+        transform.eulerAngles = new Vector3(0, transform.eulerAngles.y, 0);
     }
 
 
