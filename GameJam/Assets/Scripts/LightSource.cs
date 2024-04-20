@@ -34,7 +34,7 @@ public class LightSource
         lightIndices.Add(pos);
         Ray ray = new Ray(pos, dir);
         RaycastHit hit;
-        if (Physics.Raycast(ray, out hit, 30, 1))
+        if (Physics.Raycast(ray, out hit, 100, 1))
         {
             //lightIndices.Add(hit.point);
             //UpdateLight();
@@ -42,7 +42,7 @@ public class LightSource
         }
         else
         {
-            lightIndices.Add(ray.GetPoint(30));
+            lightIndices.Add(ray.GetPoint(100));
             UpdateLight();
         }
 

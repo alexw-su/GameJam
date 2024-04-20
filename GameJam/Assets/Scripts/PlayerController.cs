@@ -29,21 +29,25 @@ public class PlayerController : MonoBehaviour
 
     void ClickToMove()
     {
+        if (!MenuManager.instance.IsGameStarted() || LevelManager.instance.LevelCompletedScreenActive())
+        {
+            return;
+        }
         RaycastHit hit;
         if (Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out hit, 100))
         {
 
-            if(hit.transform.gameObject.tag == "Mirror")
+            if (hit.transform.gameObject.tag == "Mirror")
             {
-                if(hit.transform.gameObject.TryGetComponent(out RotateMirror mirror)) Debug.LogWarning("Found Script");
-                
+                if (hit.transform.gameObject.TryGetComponent(out RotateMirror mirror)) Debug.LogWarning("Found Script");
+
                 var distanceToMirror = (transform.position - hit.transform.position).magnitude;
 
                 Debug.Log(distanceToMirror);
 
                 if (distanceToMirror <= mirror.range) mirror.Rotate();
             }
-            else if(hit.transform.gameObject.tag == "Clickable")
+            else if (hit.transform.gameObject.tag == "Clickable")
             {
                 agent.destination = hit.point;
             }
@@ -62,7 +66,7 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-        if(input.Main.Look.IsPressed()) LookAtMouse();
+        if (input.Main.Look.IsPressed()) LookAtMouse();
     }
 
     void LookAtMouse()
