@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class LightSource
+public class LightSource : MonoBehaviour
 {
     Vector3 pos, direction;
     GameObject lightObj;
@@ -55,6 +55,7 @@ public class LightSource
         //Debug.Log("count:" + lightIndices.Count);
         foreach (Vector3 index in lightIndices)
         {
+            //Instantiate(LightManager._instance.GetPointlightPrefab(), new Vector3(0,0,0), Quaternion.identity);
             light.SetPosition(count, index);
             count++;
         }

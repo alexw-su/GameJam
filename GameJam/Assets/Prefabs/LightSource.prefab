@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 4590172392065684096}
   - component: {fileID: 3124594821590339114}
   - component: {fileID: 7091042319981579260}
+  - component: {fileID: 3575732595697160040}
   m_Layer: 0
   m_Name: LightSource
   m_TagString: Mirror
@@ -136,3 +137,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   material: {fileID: 2100000, guid: 44ae6de839ccfd0428c9cb1552d24171, type: 2}
+  pointlightPrefab: {fileID: 398660899709339264, guid: ba7353456ab79ea4ebba44a7e875ef44, type: 3}
+--- !u!114 &3575732595697160040
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7680246920218051967}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3233ace4c0b38f6468675f2786600897, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pointlightPrefab: {fileID: 398660899709339264, guid: ba7353456ab79ea4ebba44a7e875ef44, type: 3}

@@ -7,8 +7,6 @@ using UnityEngine.AI;
 
 public class PlayerController : MonoBehaviour
 {
-
-
     PlayerActions input;
     NavMeshAgent agent;
     [Header("Movement")]
