@@ -7,8 +7,6 @@ using UnityEngine.AI;
 
 public class PlayerController : MonoBehaviour
 {
-
-
     PlayerActions input;
     NavMeshAgent agent;
     [Header("Movement")]
@@ -20,6 +18,7 @@ public class PlayerController : MonoBehaviour
         agent = GetComponent<NavMeshAgent>();
         input = new PlayerActions();
         AssignInputs();
+        agent.updateRotation = false;
     }
 
     void AssignInputs()

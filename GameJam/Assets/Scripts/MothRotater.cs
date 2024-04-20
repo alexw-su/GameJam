@@ -12,6 +12,8 @@ public class MothRotater : MonoBehaviour
     void Start()
     {
         mytrans = GetComponent<Transform>();
+
+        MainCam = Camera.main;
     }
 
     void Update()
