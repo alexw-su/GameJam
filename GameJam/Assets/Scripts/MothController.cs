@@ -50,27 +50,14 @@ public class MothController : MonoBehaviour
     public void SetAnimation()
     {
         int index = PlayerPrefs.GetInt("HatIndex");
+        Debug.Log("Set Animation" + index);
         Animator animator = gameObject.GetComponent<Animator>();
-        if (index == 1)
-        {
-            animator.SetBool("Remote", true);
-        }
-        else if (index == 2)
-        {
-            animator.SetBool("Amobination", true);
-        }
-        else if (index == 3)
-        {
-            animator.SetBool("Fez", true);
-        }
-        else if (index == 4)
-        {
-            animator.SetBool("Dino", true);
-        }
-        else
-        {
-            animator.SetBool("Tophat", true);
-        }
+        animator.SetBool("Remote", index == 1);
+        animator.SetBool("Abomination", index == 2);
+        animator.SetBool("Fez", index == 3);
+        animator.SetBool("Dino", index == 4);
+        animator.SetBool("Tophat", index == 5);
+        animator.SetBool("Crown", index == 6);
     }
 
     public void SetNewTargets(List<Vector3> destinations)

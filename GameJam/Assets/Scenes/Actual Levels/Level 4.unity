@@ -512,7 +512,7 @@ PrefabInstance:
     - target: {fileID: 7616375418386929795, guid: 4abe8fa0ccda65b41aff39c9bbc4e38e, type: 3}
       propertyPath: lightTemplate
       value: 
-      objectReference: {fileID: 398660899709339264, guid: ba7353456ab79ea4ebba44a7e875ef44, type: 3}
+      objectReference: {fileID: 1350513316915585051, guid: 72ae0f2a82581b1458252377c1419e28, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
