@@ -1503,17 +1503,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3771339459039070595, guid: 091ff0f82d320f84a85453522f24909a, type: 3}
-      propertyPath: m_Intensity
-      value: 7
-      objectReference: {fileID: 0}
     - target: {fileID: 7328810110321813271, guid: 091ff0f82d320f84a85453522f24909a, type: 3}
       propertyPath: m_Name
       value: SkyLight (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 7328810110321813271, guid: 091ff0f82d320f84a85453522f24909a, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2407,17 +2399,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3771339459039070595, guid: 091ff0f82d320f84a85453522f24909a, type: 3}
-      propertyPath: m_Intensity
-      value: 7
-      objectReference: {fileID: 0}
     - target: {fileID: 7328810110321813271, guid: 091ff0f82d320f84a85453522f24909a, type: 3}
       propertyPath: m_Name
       value: SkyLight
-      objectReference: {fileID: 0}
-    - target: {fileID: 7328810110321813271, guid: 091ff0f82d320f84a85453522f24909a, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
