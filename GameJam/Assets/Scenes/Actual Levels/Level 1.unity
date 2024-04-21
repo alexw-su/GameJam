@@ -2448,7 +2448,7 @@ PrefabInstance:
     - target: {fileID: 3179218910391785456, guid: bdb4b3e984c00084ea4ca022bc255f91, type: 3}
       propertyPath: textTemplate
       value: Together with {name}, you conquered Level 1. {name} remains your {relationship}.
-        Next time, try to turn the mirror.
+        Next time, try to turn the mirrors.
       objectReference: {fileID: 0}
     - target: {fileID: 6704536265292967470, guid: bdb4b3e984c00084ea4ca022bc255f91, type: 3}
       propertyPath: m_Pivot.x

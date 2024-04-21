@@ -1006,7 +1006,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3179218910391785456, guid: bdb4b3e984c00084ea4ca022bc255f91, type: 3}
       propertyPath: textTemplate
-      value: Level 3 is done, thanks to your friend {name}. You are still {relationship}.
+      value: Level 3 is done, thanks to your {relationship}, {name}.
       objectReference: {fileID: 0}
     - target: {fileID: 6704536265292967470, guid: bdb4b3e984c00084ea4ca022bc255f91, type: 3}
       propertyPath: m_Pivot.x
