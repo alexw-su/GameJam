@@ -123,6 +123,63 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1001 &15159487
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2775621272734800171, guid: 091ff0f82d320f84a85453522f24909a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -14.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2775621272734800171, guid: 091ff0f82d320f84a85453522f24909a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 9.95
+      objectReference: {fileID: 0}
+    - target: {fileID: 2775621272734800171, guid: 091ff0f82d320f84a85453522f24909a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2775621272734800171, guid: 091ff0f82d320f84a85453522f24909a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 2775621272734800171, guid: 091ff0f82d320f84a85453522f24909a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 2775621272734800171, guid: 091ff0f82d320f84a85453522f24909a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2775621272734800171, guid: 091ff0f82d320f84a85453522f24909a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2775621272734800171, guid: 091ff0f82d320f84a85453522f24909a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 2775621272734800171, guid: 091ff0f82d320f84a85453522f24909a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2775621272734800171, guid: 091ff0f82d320f84a85453522f24909a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7328810110321813271, guid: 091ff0f82d320f84a85453522f24909a, type: 3}
+      propertyPath: m_Name
+      value: SkyLight
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 091ff0f82d320f84a85453522f24909a, type: 3}
 --- !u!1 &57631880
 GameObject:
   m_ObjectHideFlags: 0
@@ -2092,6 +2149,63 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5252b74c8485d50478618cb4ad00559f, type: 3}
+--- !u!1001 &1842716171
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2775621272734800171, guid: 091ff0f82d320f84a85453522f24909a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 9.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 2775621272734800171, guid: 091ff0f82d320f84a85453522f24909a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 9.95
+      objectReference: {fileID: 0}
+    - target: {fileID: 2775621272734800171, guid: 091ff0f82d320f84a85453522f24909a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2775621272734800171, guid: 091ff0f82d320f84a85453522f24909a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 2775621272734800171, guid: 091ff0f82d320f84a85453522f24909a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 2775621272734800171, guid: 091ff0f82d320f84a85453522f24909a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2775621272734800171, guid: 091ff0f82d320f84a85453522f24909a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2775621272734800171, guid: 091ff0f82d320f84a85453522f24909a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 2775621272734800171, guid: 091ff0f82d320f84a85453522f24909a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2775621272734800171, guid: 091ff0f82d320f84a85453522f24909a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7328810110321813271, guid: 091ff0f82d320f84a85453522f24909a, type: 3}
+      propertyPath: m_Name
+      value: SkyLight (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 091ff0f82d320f84a85453522f24909a, type: 3}
 --- !u!1001 &1855275313
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2415,6 +2529,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 566130744}
     m_Modifications:
+    - target: {fileID: 5225359483888230851, guid: 258c967eb386f3143a0c464937cf7679, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 611542cf8b798174eb10075d97b5c67c, type: 2}
     - target: {fileID: 7169739411422721028, guid: 258c967eb386f3143a0c464937cf7679, type: 3}
       propertyPath: m_LocalScale.x
       value: 4.3941007
@@ -2816,3 +2934,5 @@ SceneRoots:
   - {fileID: 1046814107}
   - {fileID: 1830224280}
   - {fileID: 1559641341}
+  - {fileID: 15159487}
+  - {fileID: 1842716171}
