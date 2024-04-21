@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using TMPro;
+using UnityEditor.Experimental.GraphView;
 using UnityEditor.Rendering;
 using UnityEngine;
 using UnityEngine.AI;
@@ -44,6 +45,31 @@ public class MothController : MonoBehaviour
         if (nextTargetIndex != -1 && distanceToTarget < _agent.stoppingDistance)
         {
             StartMoving();
+        }
+    }
+    public void SetAnimation()
+    {
+        int index = PlayerPrefs.GetInt("HatIndex");
+        Animator animator = gameObject.GetComponent<Animator>();
+        if (index == 1)
+        {
+            animator.SetBool("Remote", true);
+        }
+        else if (index == 2)
+        {
+            animator.SetBool("Amobination", true);
+        }
+        else if (index == 3)
+        {
+            animator.SetBool("Fez", true);
+        }
+        else if (index == 4)
+        {
+            animator.SetBool("Dino", true);
+        }
+        else
+        {
+            animator.SetBool("Tophat", true);
         }
     }
 

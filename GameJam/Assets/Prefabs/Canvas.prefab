@@ -137,7 +137,7 @@ MonoBehaviour:
   m_HideSoftKeyboard: 0
   m_CharacterValidation: 0
   m_RegexValue: 
-  m_GlobalPointSize: 60
+  m_GlobalPointSize: 30
   m_CharacterLimit: 0
   m_OnEndEdit:
     m_PersistentCalls:
@@ -203,6 +203,7 @@ GameObject:
   - component: {fileID: 8296104240778411643}
   - component: {fileID: 8100089434403158830}
   - component: {fileID: 6113504302788636034}
+  - component: {fileID: 140696092687023476}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -313,6 +314,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f4316db5846ec44295a5935cccfa4db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &140696092687023476
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 568315443780712585}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3fcda208f00c8b498559234419fc639, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  asrc: {fileID: 0}
+  sfx1: {fileID: 8300000, guid: a2b4a1c6e3e9aa944a000ee1f80d03a4, type: 3}
+  sfx2: {fileID: 8300000, guid: 1ded41fd183f23a4f891159eb5208a76, type: 3}
 --- !u!1 &902431573629038204
 GameObject:
   m_ObjectHideFlags: 0
@@ -436,12 +452,12 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 6113504302788636034}
         m_TargetAssemblyTypeName: MenuManager, Assembly-CSharp
-        m_MethodName: StartGame
-        m_Mode: 1
+        m_MethodName: ChooseChat
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 4
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -644,12 +660,12 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 6113504302788636034}
         m_TargetAssemblyTypeName: MenuManager, Assembly-CSharp
-        m_MethodName: StartGame
-        m_Mode: 1
+        m_MethodName: ChooseChat
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 3
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -1487,12 +1503,12 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 6113504302788636034}
         m_TargetAssemblyTypeName: MenuManager, Assembly-CSharp
-        m_MethodName: StartGame
-        m_Mode: 1
+        m_MethodName: ChooseChat
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -1620,12 +1636,12 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 6113504302788636034}
         m_TargetAssemblyTypeName: MenuManager, Assembly-CSharp
-        m_MethodName: StartGame
-        m_Mode: 1
+        m_MethodName: ChooseChat
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 2
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -1665,7 +1681,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: -98.8}
-  m_SizeDelta: {x: 776, y: 70}
+  m_SizeDelta: {x: 600, y: 70}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7639017590807544152
 CanvasRenderer:
@@ -1916,7 +1932,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &3923265078050909796
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1932,10 +1948,10 @@ RectTransform:
   - {fileID: 3685901142143863631}
   m_Father: {fileID: 8594900400647141286}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 815, y: -83}
+  m_SizeDelta: {x: 130, y: 166}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7727621546953493320
 CanvasRenderer:
@@ -2123,8 +2139,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 70
-  m_fontSizeBase: 70
+  m_fontSize: 30
+  m_fontSizeBase: 30
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -2741,7 +2757,7 @@ MonoBehaviour:
   m_HideSoftKeyboard: 0
   m_CharacterValidation: 0
   m_RegexValue: 
-  m_GlobalPointSize: 60
+  m_GlobalPointSize: 30
   m_CharacterLimit: 0
   m_OnEndEdit:
     m_PersistentCalls:
@@ -2833,8 +2849,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 55.4, y: -221.2}
-  m_SizeDelta: {x: 885.22, y: 166}
+  m_AnchoredPosition: {x: 63, y: -221.2}
+  m_SizeDelta: {x: 742.33, y: 166}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &237665924008159867
 MonoBehaviour:
@@ -2983,12 +2999,12 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 6113504302788636034}
         m_TargetAssemblyTypeName: MenuManager, Assembly-CSharp
-        m_MethodName: StartGame
-        m_Mode: 1
+        m_MethodName: ChooseChat
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 5
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -3235,8 +3251,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 70
-  m_fontSizeBase: 70
+  m_fontSize: 30
+  m_fontSizeBase: 30
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -3413,9 +3429,25 @@ PrefabInstance:
     m_TransformParent: {fileID: 9205417711377769183}
     m_Modifications:
     - target: {fileID: 266489232028185396, guid: e6259d86e70168744a27cde421b711c8, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 266489232028185396, guid: e6259d86e70168744a27cde421b711c8, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 266489232028185396, guid: e6259d86e70168744a27cde421b711c8, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 6113504302788636034}
+    - target: {fileID: 266489232028185396, guid: e6259d86e70168744a27cde421b711c8, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 266489232028185396, guid: e6259d86e70168744a27cde421b711c8, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: MenuManager, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 3588968345328754651, guid: e6259d86e70168744a27cde421b711c8, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5

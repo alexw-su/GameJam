@@ -21,16 +21,24 @@ public class MenuManager : MonoBehaviour
     {
         Debug.Log("Update name" + value);
         mothName = value;
+        //save in player prefs
+        PlayerPrefs.SetString("MothName", value);
     }
     public void UpdateRelationship(string value)
     {
         Debug.Log("Update relationship" + value);
         relationship = value;
+        PlayerPrefs.SetString("MothRelationship", value);
+    }
+    public void ChooseChat(int index)
+    {
+        PlayerPrefs.SetInt("HatIndex", index);
     }
     public void StartGame()
     {
         isGameStarted = true;
         gameObject.SetActive(false);
+        MothController.instance.SetAnimation();
     }
     public string GetMothName()
     {
