@@ -852,7 +852,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1765852295247550572, guid: 2b8b4dc8473437748b5ad86e0c6d9088, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.07774544
+      value: 1.04
       objectReference: {fileID: 0}
     - target: {fileID: 1765852295247550572, guid: 2b8b4dc8473437748b5ad86e0c6d9088, type: 3}
       propertyPath: m_LocalPosition.z
@@ -897,6 +897,10 @@ PrefabInstance:
     - target: {fileID: 6810135775876154731, guid: 2b8b4dc8473437748b5ad86e0c6d9088, type: 3}
       propertyPath: m_Name
       value: EndButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 8743666421652413832, guid: 2b8b4dc8473437748b5ad86e0c6d9088, type: 3}
+      propertyPath: m_RenderMode
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -963,8 +967,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3179218910391785456, guid: bdb4b3e984c00084ea4ca022bc255f91, type: 3}
       propertyPath: textTemplate
-      value: You discovered the power to turn mirrors! You and {name} continued onwards,
-        still as your {relationship}.
+      value: You and {name} discovered the power to turn mirrors! Did you know that
+        you can also turn the light?
       objectReference: {fileID: 0}
     - target: {fileID: 6704536265292967470, guid: bdb4b3e984c00084ea4ca022bc255f91, type: 3}
       propertyPath: m_Pivot.x

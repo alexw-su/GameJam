@@ -1069,6 +1069,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: EndButton
       objectReference: {fileID: 0}
+    - target: {fileID: 8743666421652413832, guid: 2b8b4dc8473437748b5ad86e0c6d9088, type: 3}
+      propertyPath: m_RenderMode
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2441,6 +2445,11 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 7750432352586772456}
+    - target: {fileID: 3179218910391785456, guid: bdb4b3e984c00084ea4ca022bc255f91, type: 3}
+      propertyPath: textTemplate
+      value: Together with {name}, you conquered Level 1. {name} remains your {relationship}.
+        Next time, try to turn the mirror.
+      objectReference: {fileID: 0}
     - target: {fileID: 6704536265292967470, guid: bdb4b3e984c00084ea4ca022bc255f91, type: 3}
       propertyPath: m_Pivot.x
       value: 0

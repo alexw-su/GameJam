@@ -49,6 +49,10 @@ public class MothController : MonoBehaviour
         int index = PlayerPrefs.GetInt("HatIndex");
         Debug.Log("Set Animation" + index);
         Animator animator = gameObject.GetComponent<Animator>();
+        if (index == 0)
+        {
+            index = Random.Range(1, 7);
+        }
         animator.SetBool("Remote", index == 1);
         animator.SetBool("Abomination", index == 2);
         animator.SetBool("Fez", index == 3);

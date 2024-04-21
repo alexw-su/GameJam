@@ -53,6 +53,16 @@ public class RotateMirror : MonoBehaviour
         while (timeElapsed <= rotationTime)
         {
             timeElapsed += Time.deltaTime;
+
+            float angleDifference = Quaternion.Angle(transform.rotation, nextStateRotation);
+
+            if (angleDifference <= 2f)
+            {
+                transform.rotation = nextStateRotation;
+                rotating = false;
+                yield break;
+            }
+
             transform.rotation = Quaternion.Slerp(transform.rotation, nextStateRotation, timeElapsed / rotationTime);
 
             yield return null;
