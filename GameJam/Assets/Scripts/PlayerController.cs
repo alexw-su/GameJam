@@ -28,10 +28,10 @@ public class PlayerController : MonoBehaviour
 
     void ClickToMove()
     {
-        //if (!MenuManager.instance.IsGameStarted() || LevelManager.instance.LevelCompletedScreenActive())
-        //{
-        //    return;
-        //}
+        if (!MenuManager.instance.IsGameStarted() || LevelManager.instance.LevelCompletedScreenActive())
+        {
+            return;
+        }
         RaycastHit hit;
         if (Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out hit, 100))
         {

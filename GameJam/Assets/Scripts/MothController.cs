@@ -1,9 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
-using System.Linq;
 using TMPro;
-using UnityEditor.Experimental.GraphView;
-using UnityEditor.Rendering;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -62,6 +59,10 @@ public class MothController : MonoBehaviour
 
     public void SetNewTargets(List<Vector3> destinations)
     {
+        if (!MenuManager.instance.IsGameStarted() || LevelManager.instance.LevelCompletedScreenActive())
+        {
+            return;
+        }
         if (!ListsAreEqual(allLastTargets, destinations))
         {
             allLastTargets = destinations;
