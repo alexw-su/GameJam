@@ -59,10 +59,16 @@ public class MothController : MonoBehaviour
 
     public void SetNewTargets(List<Vector3> destinations)
     {
-        if (!MenuManager.instance.IsGameStarted() || LevelManager.instance.LevelCompletedScreenActive())
+        var manager = MenuManager.instance;
+        var levelManager = LevelManager.instance;
+        if (manager != null && levelManager != null)
         {
-            return;
+            if (!manager.IsGameStarted() || levelManager.LevelCompletedScreenActive())
+            {
+                return;
+            }
         }
+
         if (!ListsAreEqual(allLastTargets, destinations))
         {
             allLastTargets = destinations;
