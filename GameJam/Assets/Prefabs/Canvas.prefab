@@ -1295,7 +1295,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Game Title
+  m_text: Super Mega Awesome Moth
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2b80a9e071533374d841861e3aeae231, type: 2}
   m_sharedMaterial: {fileID: -1798053905966391617, guid: 2b80a9e071533374d841861e3aeae231, type: 2}
